@@ -1,0 +1,12 @@
+com.ristorante
+com.ristorante.controller
+com.ristorante.db
+com.ristorante.dto
+com.ristorante.exception
+com.ristorante.facade
+com.ristorante.mapper
+com.ristorante.model
+com.ristorante.repository
+com.ristorante.security
+com.ristorante.service.impl
+com.ristorante.service.model

@@ -1,0 +1,29 @@
+registrazione cliente (nome,cognome,username,password,passwordRipetuta)
+registrazione ristoratore(nome,cognome,username,password,passwordRipetuta,nomeRistorante)
+login(username,password)->utenteRegistrato
+
+metodi ristoratore
+
+aggiungiIngrediente(nomeIngrediente)
+aggiungipiatto(nomepiatto, prezzo, List<long>idIngredienti, idCategoria)
+visualizzaIngredienti()->list<Ingrediente>
+visualizzaOrdini()->ordini non evasi e non rifiutati
+cambiaStatoOrdine(idOrdine) (imposta l'ordine come in elaborazione se ricevuto e inviato se in elaborazione)
+rifiutaordine(idOrdine)
+aggiungiCategoria(nomeCategoria)
+visualizzaCategorie()->List<Categoria>
+
+metodiCliente
+visualizzaRistoranti->list<Ristorante>
+visualizzaPiatti(idRistorante)->List<Piatto>
+visualizzaIngredientiPiatto(idPiatto)->List<Ingredienti>piatto
+aggiungiAllOrdine(idPiatto, quantita)
+inviaOrdine(idOrdine)
+visualizzaOrdiniFuturi()->tutti gli ordini non evasi e non rifiutati
+visualizzaStorico()->tutti gli ordini evasi e rifiutati
+
+metodi admin
+visualizzaRistoranti->->list<Ristorante>
+visualizzaOrdini->List<Ordini>
+visualizzaFatturato(long idRistorante)->incasso diviso per mese di quel ristorante
+visualizzaOrdiniUtente(idUtente)tutti gli ordini di quell'utente
